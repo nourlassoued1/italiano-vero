@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inscription - Italiano Vero</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Original register form styles - unchanged */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #ffffff ;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .login-main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .login-container {
+      background-color: white;
+      padding: 70px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 500px;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      color: #c32210;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="email"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .login-container button[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .login-container a {
+      display: block;
+      margin-top: 15px;
+      color: #333;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section (same as login.html) -->
+  <header>
+    <h1>Italiano Vero</h1>
+    <div class="search">
+      <input type="text" placeholder="Cerca ricette...">
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+        </svg>
+      </button>
+    </div>
+    <div class="auth-buttons">
+        <a href="login.html"><button>Connecter</button></a>
+        <a href="register.html"><button class="register">Registrer</button></a>
+    </div>
+  </header>
+
+  <!-- Navigation buttons (same as login.html) -->
+  <div class="wrapper">
+    <div id="buttons">
+      <button class="button-value" onclick="window.location.href = 'index.html';">Accueil</button>
+      <button class="button-value" onclick="window.location.href = 'pizza.html';">Pizza</button>
+      <button class="button-value" onclick="window.location.href = 'pasta.html';">Pasta</button>
+      <button class="button-value" onclick="window.location.href = 'pane.html';">Pane</button>
+      <button class="button-value" onclick="window.location.href = 'dolce.html';">Dolce</button>
+    </div>
+    <br><br><br>
+  </div>
+
+  <!-- Registration Form (same layout as login form) -->
+  <main class="login-main">
+    <div class="login-container">
+      <h2>Inscription</h2>
+      <form>
+        <input type="text" placeholder="Nom" required />
+        <input type="email" placeholder="Adresse email" required />
+        <input type="password" placeholder="Mot de passe" required />
+        <button type="submit">S'inscrire</button>
+        <a href="login.html">Déjà un compte ?</a>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer Section (same as login.html) -->
+  <footer>
+    <p>&copy; 2025 Italiano Vero. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
