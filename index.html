@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Italiano Vero</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Italiano Vero</h1>
+    <div class="search">
+      <input type="text" placeholder="Cerca ricette...">
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+        </svg>
+      </button>
+    </div>
+    <div class="auth-buttons">
+      <a href="login.html"><button>Connecter</button></a>
+      <a href="register.html"><button class="register">Registrer</button></a>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <div id="buttons">
+      <button class="button-value" onclick="window.location.href = 'index.html';">Acceuil</button>
+      <button class="button-value" onclick="window.location.href = 'pizza.html';">Pizza</button>
+      <button class="button-value" onclick="window.location.href = 'pasta.html';">Pasta</button>
+      <button class="button-value" onclick="window.location.href = 'pane.html';">Pane</button>
+      <button class="button-value" onclick="window.location.href = 'dolce.html';">Dolce</button>
+    </div>
+
+    <section class="hero">
+      <img src="pizzaman.png" alt="Chef with pizza">
+      <div class="hero-text">
+        <h2>Benvenuti!</h2>
+        <p>
+          Bienvenue sur Italiano Vero, votre destination incontournable pour des recettes italiennes authentiques, directement venues du cœur de l’Italie.
+          Buon appetito!
+        </p>
+        <a href="#footer"><button>Commencez à cuisiner</button></a>
+      </div>
+    </section>
+
+    <h2 class="section-title">Un monde de saveurs vous attend</h2>
+    <section class="recipe-cards">
+      <div class="card">
+        <img src="pomodoro.png" alt="Pomodoro">
+        <div class="card-content">
+          <h3>Pasta al Pomodoro: classica</h3>
+          <a href="pomodoro.html" class="discover">VOIR RECETTE ➜</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="tiramisu.png" alt="Tiramisu">
+        <div class="card-content">
+          <h3>Tiramisu</h3>
+          <a href="tiramisu.html" class="discover">VOIR RECETTE ➜</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="bruschetta.png" alt="Bruschetta">
+        <div class="card-content">
+          <h3>Bruschetta con pomodoro e avocado</h3>
+          <a href="bruschetta.html" class="discover">VOIR RECETTE ➜</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="pizza.png" alt="Pizza">
+        <div class="card-content">
+            <h3>Pizza Quattro Formaggi</h3>
+            <a href="pizzafor.html" class="discover">VOIR RECETTE ➜</a>
+        </div>
+      </div>
+    </section>
+
+    <h2 class="section-title">Notre sélection de délices culinaires</h2>
+    <section class="culinary-showcase">
+      <div class="card">
+        <img src="carbonara.png" alt="carbonara">
+        <div class="card-content">
+          <h3>Spaghetti Carbonara</h3>
+          <a href="carbonara.html" class="discover">VOIR RECETTE ➜</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="lasagna.png" alt="Lasagna">
+        <div class="card-content">
+          <h3>Lasagna</h3>
+          <a href="lasagna.html" class="discover">VOIR RECETTE ➜</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="arancini.png" alt="Arancini">
+        <div class="card-content">
+          <h3>Arancini di Riso</h3>
+          <a href="arancini.html" class="discover">VOIR RECETTE ➜</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="puttanesca.png" alt="Puttanesca">
+        <div class="card-content">
+          <h3>Spaghetti alla Puttanesca</h3>
+          <a href="puttanesca.html" class="discover">VOIR RECETTE ➜</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="linguine.png" alt="Linguine">
+        <div class="card-content">
+          <h3>Linguine: Gamberetti</h3>
+          <a href="linguine.html" class="discover">VOIR RECETTE ➜</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="gnocchi.png" alt="Gnocchi">
+        <div class="card-content">
+          <h3>Gnocchi</h3>
+          <a href="gnocchi.html" class="discover">VOIR RECETTE ➜</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="pesto.png" alt="Pesto">
+        <div class="card-content">
+          <h3>Pesto Pasta</h3>
+          <a href="pesto.html" class="discover">VOIR RECETTE ➜</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="fettuccine.png" alt="Fettuccine">
+        <div class="card-content">
+          <h3>Fettuccine Alfredo</h3>
+          <a href="fettuccine.html" class="discover">VOIR RECETTE ➜</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer id="footer">
+    <p>&copy; 2025 Italiano Vero. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
